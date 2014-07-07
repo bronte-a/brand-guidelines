@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Change Arcade - Brand Guidelines</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+<div class="wrapper">
+
+<div id="p1" class="panel red">
+
+<div class="content">
+<div style="max-width:600px;margin-left:auto;margin-right:auto;">
+<img src="logo-white.png" width="100%" />
+</div>
+
+<div style="margin-top:120px;">
+<h2>Brand Guidelines</h2>
+</div>
+
+
+</div>
+
+</div>
+
+<div id ="p2" class="panel">
+  
+<div class="content">
+
+<h1>Colours</h1>
+
+<div id="changer">
+ <div id="redder"></div>
+ <div id="blacker"></div>
+ <div id="whiter"></div>
+</div>
+
+<div id="c-logo">
+
+  <div id="logoc-1">
+  <img src="logo-red.png" width="100%" />
+  </div>
+
+  <div id="logoc-2">
+  <img src="logo2.png"  width="100%" />
+  </div>
+  
+  <div id="logoc-3">
+  <img src="logo-white1.png"  width="100%" />
+  </div>
+
+</div>
+
+
+</div><!-- end of content -->
+
+</div>
+
+<div id ="p3" class="panel">
+
+	
+
+	<div class="content">
+    
+    <div style="width:100%;">
+    <h1>Fonts</h1>
+     <br><br>
+    <p2>Headings: Oblik Serif Bold</p2>
+
+    <br><p4>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z </p4><br><br><br><br>
+
+    <p3>Body Text: Lato</p3>
+
+    <br><p5>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z </p5>
+     </div>
+
+     </div>
+
+</div>
+
+<div id ="p4" class="panel">
+
+
+<div class="content">
+	<h1>Logo</h1>
+    
+    <div class="spacing-image">
+	<img src="spacing.png"  width="100%" />
+    </div>
+
+    <div style="width:100%;max-width:620px;margin-left:auto;margin-right:auto;">
+    <p3 style="font-size:12pt;">40px of white space is required around the logo. If the white logo is being used, it must have a background of <span style="font-family: OblikSerif-Bold;color:#282828;line-height:0px;">#282828</span> with 40px space of that colour around it.</p3>
+    </div>
+
+</div>
+
+</div>
+</div>
+
+<div class="footer">
+
+<a id="thome"><div class="item">Home</div></a>
+
+<a id="tone"><div class="item">Colour</div></a> 
+<a id="ttwo"><div class="item">Fonts</div></a> 
+<a id="tthree"><div class="item">Logo</div></a>
+
+</div>
+	
+
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script>
+
+$('#tone').click(function(){
+	$('#p1').addClass('margin');
+	$('#p2').removeClass( 'margin' );
+	$('#p3').removeClass( 'margin' );
+	$('#p4').removeClass( 'margin' );
+});
+
+$('#ttwo').click(function(){
+	$('#p2').addClass('margin');
+	$('#p1').addClass('margin');
+	$('#p3').removeClass( 'margin' );
+});
+
+$('#tthree').click(function(){
+	$('#p3').addClass('margin');
+	$('#p2').addClass('margin');
+	$('#p1').addClass('margin');
+
+});
+
+$('#thome').click(function(){
+	$('#p1').removeClass( 'margin' );
+	$('#p2').removeClass( 'margin' );
+	$('#p3').removeClass( 'margin' );
+	$('#p4').removeClass( 'margin' );
+});
+
+$('#redder').click(function(){
+	$('#logoc-2, #logoc-3').fadeOut( 900 );
+	$('#logoc-1').delay( 900 ).fadeIn( 'slow' );
+});
+
+$('#blacker').click(function(){
+	$('#logoc-1, #logoc-3').fadeOut( 900 );
+	$('#logoc-2').delay( 900 ).fadeIn( 'slow' );
+});
+
+$('#whiter').click(function(){
+	$('#logoc-2, #logoc-1').fadeOut( 900 );
+	$('#logoc-3').delay( 900 ).fadeIn( 'slow' );
+});
+
+
+
+
+</script>
+
+</body>
+</html>
